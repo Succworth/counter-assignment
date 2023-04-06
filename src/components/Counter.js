@@ -10,10 +10,10 @@ export default function Counter() {
   }
   return (
     <div>
-      <h2>Counter</h2>
+      <h2 data-testid="header">Counter</h2>
       <p data-testid="count">{count}</p>
-      <button onClick={increment}> + </button>
-      <button onClick={decrement}> - </button>
+      <button data-testid="inc" onClick={increment}> + </button>
+      <button data-testid="dec" onClick={decrement}> - </button>
     </div>
   );
 }
